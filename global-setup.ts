@@ -22,6 +22,7 @@ export default async function globalSetup() {
     timeout: 60000,
   });
 
+
   // 2️⃣ Wait for login inputs (IMPORTANT)
   await page.waitForSelector('#username', { timeout: 60000 });
   await page.waitForSelector('#password', { timeout: 60000 });
