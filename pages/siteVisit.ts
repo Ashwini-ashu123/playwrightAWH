@@ -49,12 +49,16 @@ export class SiteVisitPage{
   async verifyComplete(name: string) {
         const statusLabel = this.page.locator('div.test-id__field-label-container', { hasText: 'Site Visit Status' } );
         await expect(statusLabel).toBeVisible();
-        const statusValue = this.page.locator('lightning-formatted-text',{ hasText: 'Completed' });
-        await expect(statusValue).toBeVisible();
-        const oppLabel = this.page.locator('div.test-id__field-label-container',{ hasText: 'Opportunity' });
-        await expect(oppLabel).toBeVisible();
-        const oppValue = this.page.locator('test-id__field-value',{ hasText: name });
-        await expect(oppValue).toBeVisible();
+        const completedStatus = this.page.getByText('Completed', { exact: true });
+        await expect(completedStatus).toBeVisible();
+        const oppValue = this.page
+         .locator('record_flexipage-record-field') // each row
+         .filter({ has: this.page.locator('div.test-id__field-label-container', { hasText: 'Opportunity' }) })
+         .locator('records-hoverable-link', { hasText: name });
+
+       await expect(oppValue).toBeVisible();
+       await oppValue.click();
+
   }
 
 
