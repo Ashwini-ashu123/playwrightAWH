@@ -1,0 +1,24 @@
+{
+  "name": "playwrightjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.3.0",
+    "@playwright/test": "^1.57.0",
+    "playwright": "^1.57.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "playwright-core": "^1.57.0"
+  }
+}

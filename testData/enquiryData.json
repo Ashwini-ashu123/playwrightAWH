@@ -1,0 +1,24 @@
+{
+  "enquiryFlow": [
+    {
+      "scenario": "Tenant Enquiry",
+      "phone": "9746553643",
+      "email": "playwright@gmail.com",
+      "lastName": "Playwright 1",
+      "intentType": "Tenant",
+      "budget": "25 Lakhs",
+      "natureOfPurchase": "Rent",
+      "serviceRequired": "Land",
+      "size": "2500",
+      "enquirySource": "Offline",
+      "enquirySubSource": "Walk-in",
+      "recordId": "a049I000001XDsLQAW",
+      "sizeRange": "below 10000",
+      "InameLocation": "Parrys",
+      "IRange": "15",
+      "Status": "Closed",
+      "Reason": "Qualified",
+      "FileName": "Playwright proposal automate"
+    }
+  ]
+}
