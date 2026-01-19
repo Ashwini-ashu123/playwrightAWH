@@ -2,9 +2,9 @@
   "enquiryFlow": [
     {
       "scenario": "Tenant Enquiry",
-      "phone": "9746553643",
-      "email": "playwright@gmail.com",
-      "lastName": "Playwright 1",
+      "phone": "9741253643",
+      "email": "playwright34@gmail.com",
+      "lastName": "Playwright test data 1",
       "intentType": "Tenant",
       "budget": "25 Lakhs",
       "natureOfPurchase": "Rent",
@@ -18,7 +18,8 @@
       "IRange": "15",
       "Status": "Closed",
       "Reason": "Qualified",
-      "FileName": "Playwright proposal automate"
+      "FileName": "Playwright proposal automate",
+      "DocumentName": "negoName Document"
     }
   ]
 }

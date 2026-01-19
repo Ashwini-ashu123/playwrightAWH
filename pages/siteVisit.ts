@@ -23,7 +23,9 @@ export class SiteVisitPage{
     await unitBundle.selectOption({index:1});
     const footer = this.page.locator('div.navigation-bar__right-align');
     await footer.getByRole('button', { hasText: 'Save' }).click();
+    await this.page.locator('//button[@title="Cancel and close"]').click();
     await this.page.reload();
+    await this.page.locator('//button[@title="Cancel and close"]').click();
       }
 
   async verifySiteVisit(name : String){

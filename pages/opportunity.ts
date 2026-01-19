@@ -49,6 +49,7 @@ export class OpportunityPage {
         await footer.locator('button.slds-button_neutral', { hasText: 'Next' }).click();
 //         await this.page.waitForTimeout(10000);
         await this.page.reload();
+        await footer.locator('button.slds-button_neutral', { hasText: 'Next' }).click();
      }
 
 
